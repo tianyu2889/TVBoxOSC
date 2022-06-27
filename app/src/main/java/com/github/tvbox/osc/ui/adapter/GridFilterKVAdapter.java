@@ -6,18 +6,13 @@ import com.github.tvbox.osc.R;
 
 import java.util.ArrayList;
 
-/**
- * @author pj567
- * @date :2020/12/23
- * @description:
- */
-public class SearchWordAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
-    public SearchWordAdapter() {
-        super(R.layout.item_search_word_split, new ArrayList<>());
+public class GridFilterKVAdapter extends BaseQuickAdapter<String, BaseViewHolder> {
+    public GridFilterKVAdapter() {
+        super(R.layout.item_grid_filter_value, new ArrayList<>());
     }
 
     @Override
     protected void convert(BaseViewHolder helper, String item) {
-        helper.setText(R.id.tvSearchWord, item);
+        helper.setText(R.id.filterValue, item);
     }
 }
